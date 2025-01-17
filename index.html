@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         /* Add your CSS styles here */
+        *{
+            box-sizing: border-box;
+        }
         body {
             font-family: Arial, sans-serif;
             align-items: center;
@@ -76,7 +79,22 @@
         #noButton {
             position: absolute;
         }
-        
+        .footer {
+            background-color: #007bff;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            color: white;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            line-height: 1.5;
+            opacity: 0.8;
+            transition: opacity 0.5s;
+        }
     </style>
 </head>
 <body>
@@ -84,6 +102,7 @@
         <h1>Are You Gay?</h1>
         <button id="yesButton"><a href="next.html">Yes</a></button>
         <button id="noButton">No</button>
+        <div class="footer">Made with &lt;3 by Othmane</div>
     </div>
     <script src="script.js"></script>
 </body>
